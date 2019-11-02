@@ -41,3 +41,11 @@ module:
             }
         ]
     }
+
+## Scripts
+
+yarn build
+
+    "scripts": {
+        "build": "webpack --mode development"
+    },
