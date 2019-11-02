@@ -1,12 +1,20 @@
-## GoBrBr Dependences
+## GoBarber Step-by-step
 
 ### Babel, Webpack
 
-yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+yarn add
+
+    @babel/core
+    @babel/preset-env
+    @babel/preset-react
+    webpack webpack-cli
 
 ## React, React DOM
 
-yarn add react, react-dom
+yarn add
+
+    react,
+    react-dom
 
 ## Babel Config
 
