@@ -1,33 +1,43 @@
 ## GoBrBr Dependences
 
-# Babel, Webpack
+### Babel, Webpack
 
 yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
 
-# React, React DOM
+## React, React DOM
 
 yarn add react, react-dom
 
-# Babel Config
+## Babel Config
 
-preset-env, preset-react
+    presets: [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
 
-# Webpack Config
+## Webpack Config
 
-entry:
+entry: 
 
-    => path ( 'src', 'index.js' )
+    path.resolve(__dirname, 'src', 'index.js'),
 
 output:
 
-    => path ( 'public' )
-    => filename: 'bundle.js'
+    {
+        path: path.resolve(__dirname, 'public'),
+        filename: 'bundle.js'
+    },
 
-module:
+module: 
 
-    rules:
-    
-        test => '*.js',
-        exclude => 'node_modules'
-        use
-            => loader: 'babel-loader' 
+    { 
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    }
