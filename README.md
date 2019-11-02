@@ -1,4 +1,4 @@
-## GoBarber Step-by-step
+## React From Scratch (step-by-step)
 
 ### Babel, Webpack
 
